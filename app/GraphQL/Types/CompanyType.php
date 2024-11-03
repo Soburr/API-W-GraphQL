@@ -6,12 +6,13 @@ namespace App\GraphQL\Types;
 
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Type as GraphQLType;
+use App\Models\Company;
 
 class CompanyType extends GraphQLType
 {
     protected $attributes = [
-        'name' => 'Company',
-        'description' => 'A type'
+        'name' => 'company',
+        'model' => Company::class
     ];
 
     public function fields(): array

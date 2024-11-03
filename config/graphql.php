@@ -2,6 +2,10 @@
 
 declare(strict_types = 1);
 
+use App\GraphQL\Types\CompanyType;
+use App\GraphQL\Queries\CompanyQuery;
+use App\GraphQL\Queries\CompaniesQuery;
+
 return [
     'route' => [
         // The prefix for routes; do NOT use a leading slash!
@@ -75,6 +79,8 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
+                CompanyQuery::class,
+                CompaniesQuery::class
                 // ExampleQuery::class,
             ],
             'mutation' => [
@@ -82,6 +88,7 @@ return [
             ],
             // The types only available in this schema
             'types' => [
+                CompanyType::class
                 // ExampleType::class,
             ],
 
