@@ -11,7 +11,7 @@ use App\Models\Company;
 class CompanyType extends GraphQLType
 {
     protected $attributes = [
-        'name' => 'company',
+        'name' => 'Company',
         'model' => Company::class
     ];
 

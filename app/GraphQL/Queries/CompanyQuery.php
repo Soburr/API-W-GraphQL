@@ -20,7 +20,7 @@ class CompanyQuery extends Query
 
     public function type(): Type
     {
-        return GraphQL::type('company');
+        return GraphQL::type('Company');
     }
 
     public function args(): array

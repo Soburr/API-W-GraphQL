@@ -20,7 +20,7 @@ class CompaniesQuery extends Query
 
     public function type(): Type
     {
-        return Type::listOf(GraphQL::type('company'));
+        return Type::listOf(GraphQL::type('Company'));
     }
 
     public function resolve($root, array $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)

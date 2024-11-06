@@ -20,7 +20,7 @@ class CreateCompanyMutation extends Mutation
 
     public function type(): Type
     {
-        return Type::listOf(GraphQL::type('company'));
+        return GraphQL::type('Company');
     }
 
     public function args(): array
