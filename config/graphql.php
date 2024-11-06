@@ -2,6 +2,9 @@
 
 declare(strict_types = 1);
 
+use App\GraphQL\Mutations\CreateCompanyMutation;
+use App\GraphQL\Mutations\DeleteCompanyMutation;
+use App\GraphQL\Mutations\UpdateCompanyMutation;
 use App\GraphQL\Types\CompanyType;
 use App\GraphQL\Queries\CompanyQuery;
 use App\GraphQL\Queries\CompaniesQuery;
@@ -84,6 +87,9 @@ return [
                 // ExampleQuery::class,
             ],
             'mutation' => [
+                CreateCompanyMutation::class,
+                UpdateCompanyMutation::class,
+                DeleteCompanyMutation::class
                 // ExampleMutation::class,
             ],
             // The types only available in this schema
